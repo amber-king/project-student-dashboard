@@ -1,3 +1,5 @@
+// TODO: StudentDataI
+
 import StudentDataII from "./StudentDataII.js"
 export default function Students({ info, cohort }) {
     // * empty array iterated through to match corresponding student clicked with correct cohort
@@ -10,6 +12,7 @@ export default function Students({ info, cohort }) {
 
     // * returns the the student email,full name,dob and profile pic through the map method
     // * w/toggle button to change b/t show more & hide less ->StudentDataII
+    // .replace(), modifies the string to the coders desire without changing the orignal data
     return (
         <div className="students">
             <div>
@@ -26,6 +29,7 @@ export default function Students({ info, cohort }) {
                                 <p><strong>{student.names.preferredName} {student.names.middleName.slice(0, 1)}. {student.names.surname}</strong></p>
                                 <p>{student.username}</p>
                                 <p>Birthday: {student.dob}</p>
+
 
                             </div>
 

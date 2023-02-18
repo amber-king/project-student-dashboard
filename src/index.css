@@ -35,7 +35,7 @@ main {
 }
 
 .firstStudent {
-    border: 2px solid lightgray ;
+    border: 2px solid black ;
     margin: 5px;
     padding: 10px;
 }
@@ -65,3 +65,13 @@ main {
     list-style-type: none;
     padding-bottom: 7px;
 }
+form {
+    padding: 7px;
+     border: 1px solid black;
+ }
+ 
+ 
+ form .dblock {
+     display: block;
+     margin: 3px;
+ }
