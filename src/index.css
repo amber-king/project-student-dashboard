@@ -1,0 +1,67 @@
+header {
+    height: 50px;
+    background-color: tan;
+    text-align: center;
+    padding: top 10px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.cohorts {
+    background-color:darkkhaki;
+
+}
+
+.cohorts li {
+    list-style-type: none;
+}
+
+.students {
+    background-color: beige ;
+}
+
+.students img {
+    width: 180px;
+    max-height: 250px;
+
+}
+
+.firstStudent {
+    border: 2px solid lightgray ;
+    margin: 5px;
+    padding: 10px;
+}
+
+.picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    margin: 5px;
+}
+
+.infoSpot {
+    margin-left: 15px;
+}
+.achievement {
+    margin: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content:space-between;
+    padding-left: 7px;
+    padding-right: 7px;
+   
+}
+
+.achievement li {
+    list-style-type: none;
+    padding-bottom: 7px;
+}
