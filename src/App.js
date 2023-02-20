@@ -1,4 +1,5 @@
 // TODO: main js file w/ all props passed down
+
 import { useState } from "react"
 import React from "react"
 import Info from "./data/data.json" // * import of object of student data
@@ -21,7 +22,7 @@ function App() {
       <Header />
       <main>
         <Cohorts info={info} setCohort={setCohort} />
-        <StudentsData info={info} cohort={cohort} />
+        <StudentsData info={info} setInfo={setInfo} cohort={cohort} />
       </main>
       {/* <Footer/> */}
       <h3>Footer Here</h3>

@@ -3,7 +3,7 @@
 export default function Yellow({warPercent}){
 return (
     <div>
-        <h3> Percent of Goal Achieved: <yellow>{warPercent}</yellow> % </h3>
+        <h3> Percent of Goal Achieved: <span className="yellow">{warPercent}</span> % </h3>
     </div>
 )
 }

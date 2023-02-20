@@ -16,7 +16,7 @@ export default function Cohort({ info, setCohort }) {
     }
 
     let returnArr = noDuplicate(info.map((student) => student.cohort.cohortCode))
-    returnArr.unshift("All Students🎓")
+    returnArr.unshift("All Students")
     // * the new array of info is set with a map through of the previous function by the following methods --v
     //The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
     // map() creates a new array from calling a function for every array element. 

@@ -1,22 +1,27 @@
 // TODO: Comments and Notes 
-// import { useState } from "react"
+// ! we will begin at App.js & work through the student.js files to connect this comment.js section
 
-// ! for tomorrow 2/20
-// ! we will begin at App.js &  work through the student.js files to connect this comment.js section
-
+export default function Comments({ id, info, setInfo, student }) {
+    
 // * handles the submit of comments added to the students profile via user input
-// * should also return current comments and notes data that is already attached to students profile
-
-export default function Comments() {
-
-    // const [addedCmt,setaddedCmt] = useState({ // * state to add in commenter name and comment
-    //     commenterName: "",
-    //     comment: ""
-    // })
-    // const [currentCmt, setCurrentCmt] = useState () // * state to filter through for the comments currently there for the student prof.
 
     function handleSubmit(event) {
-        // event.prevenDefault()
+        event.preventDefault()
+
+        const commentChange = info.map((students) => {
+            if (students.id === id) {
+                students.notes = [...students.notes,
+                { commenter: event.target.commenterName.value, comment: event.target.comment.value }] 
+            }
+            // * should also return current comments and notes data that is already attached to students profile
+            return students
+        })
+        // * sets new comment info to info setter
+        setInfo(commentChange)
+        event.target.commenterName.value = ""
+        event.target.comment.value = ""
+
+
 
     }
 
@@ -24,17 +29,23 @@ export default function Comments() {
     // dblock ->Use the d-inline-block class to make an element display inline blocks
     return (
         <div>
-            <h2>1-on-1 Notes</h2>
-            <form>
+            <h2>1-on-1 Notes🖊️</h2>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="commentName" className="dblock"><strong>Commenter Name:</strong> </label>
                 <input type="text" id="commenterName" name="commenterName" className="dblock" required></input>
                 <label htmlFor="comment" className="dblock"><strong>Comment:</strong> </label>
-                <input type="text" id="commentHere" name="comment" className="dblock" required></input>
-                <button onClick={handleSubmit} >Add Note</button>
+                <input type="text" id="comment" name="comment" className="dblock" required></input>
+                <button type="submit">Add Note</button>
 
             </form>
             <ul>
-                <li key={1}>Insert Comment Here</li>
+
+                {student.notes.map((before, after) =>
+
+                    <li key={after}>{before.commenter} Says, {before.comment}</li>
+
+                )}
+
             </ul>
 
         </div>

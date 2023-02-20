@@ -1,7 +1,7 @@
 // TODO: StudentDataI
 
 import StudentDataII from "./StudentDataII.js"
-export default function Students({ info, cohort }) {
+export default function Students({ info, cohort, setInfo }) {
     // * empty array iterated through to match corresponding student clicked with correct cohort
     let newStudentArr = []
     if (cohort === "All Students") {
@@ -17,7 +17,7 @@ export default function Students({ info, cohort }) {
         <div className="students">
             <div>
                 <h3>{cohort.replace(/\d+/g, '') + " " + cohort.replace(/\D/g, '')}</h3>
-                <h4>Total Students: {newStudentArr.length} </h4>
+                <h4>Total Students ➡️ <span className="green2">{newStudentArr.length} </span></h4>
             </div>
 
             <ul>
@@ -34,7 +34,7 @@ export default function Students({ info, cohort }) {
                             </div>
 
                         </div>
-                        <StudentDataII student={student} />
+                        <StudentDataII student={student} id={student.id} info={info} setInfo={setInfo} />
                         {/*  The <hr> HTML element represents a thematic break between paragraph-level elements*/}
 
                     </li>
