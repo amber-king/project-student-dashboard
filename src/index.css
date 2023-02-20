@@ -2,7 +2,7 @@ header {
     height: 50px;
     background-color: tan;
     text-align: center;
-    padding: top 10px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -16,16 +16,20 @@ main {
 }
 
 .cohorts {
-    background-color:darkkhaki;
+    background-color: khaki;
+    text-align: center;
 
 }
 
 .cohorts li {
     list-style-type: none;
 }
+.cohorts ul {
+    text-align: left;
+}
 
 .students {
-    background-color: beige ;
+    background-color: lightgray;
 }
 
 .students img {
@@ -35,7 +39,7 @@ main {
 }
 
 .firstStudent {
-    border: 2px solid black ;
+    border: 7px darkgray double;
     margin: 5px;
     padding: 10px;
 }
@@ -51,27 +55,45 @@ main {
 .infoSpot {
     margin-left: 15px;
 }
+
 .achievement {
     margin: 5px;
-    border: 1px solid black;
+    border: 3px solid darkkhaki;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-left: 7px;
     padding-right: 7px;
-   
+
 }
 
-.achievement li {
+.achievement {
     list-style-type: none;
     padding-bottom: 7px;
 }
+
+.achievement green {
+    color: green;
+}
+
+.achievement yellow {
+    color: rgb(195, 195, 32);
+}
+
+.achievement red {
+    color: red;
+}
+
 form {
     padding: 7px;
-     border: 1px solid black;
- }
- 
- 
- form .dblock {
-     display: block;
-     margin: 3px;
- }
+    border: 5px solid sandybrown;
+}
+
+
+form .dblock {
+    display: block;
+    margin: 3px;
+}
+
+.button{
+    color: white;
+}

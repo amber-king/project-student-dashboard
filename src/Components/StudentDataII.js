@@ -20,7 +20,7 @@ export default function StudentDataII({ student }) {
 
             {moreInfo ? (
                 <div>
-                    < Achievement />
+                    < Achievement student={student}/>
                     < Comments />
                 </div>
             ) : (null)}

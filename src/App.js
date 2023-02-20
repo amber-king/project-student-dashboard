@@ -1,3 +1,4 @@
+// TODO: main js file w/ all props passed down
 import { useState } from "react"
 import React from "react"
 import Info from "./data/data.json" // * import of object of student data
