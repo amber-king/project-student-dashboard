@@ -48,7 +48,7 @@ main {
 .picture {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: start;
     margin: 5px;
 }
@@ -105,4 +105,14 @@ form .dblock {
     background-color: lightgrey;
     border: 0.3px;
     text-decoration: underline;
+}
+
+.graduateinfo {
+    color: cadetblue;
+    border: 3px dotted blanchedalmond;
+
+}
+
+Footer {
+    color: dimgrey;
 }

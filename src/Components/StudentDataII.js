@@ -4,7 +4,7 @@ import { useState } from "react"
 import Achievement from "./Achievement.js";
 import Comments from "./Comments.js";
 
-export default function StudentDataII({ student,id, info, setInfo }) {
+export default function StudentDataII({ student, id, info, setInfo }) {
     const [moreInfo, setMoreInfo] = useState(false) // * state for show more & hide less option
 
     // * sets the more info to the setter for the show more or hide less option
@@ -16,12 +16,16 @@ export default function StudentDataII({ student,id, info, setInfo }) {
     // * hooked onto student data(student 1), return w/ Achievement and Comments information for the student
     return (
         <div className="toggleButton">
-            <button  onClick={toggleMoreInfo} >{!moreInfo ? "Show more" : "Hide less"}</button>
+            <button onClick={toggleMoreInfo} >{!moreInfo ? "Show more" : "Hide less"}</button>
 
             {moreInfo ? (
                 <div>
-                    < Achievement student={student}/>
-                    < Comments id={id} info={info} setInfo={setInfo} student={student}  />
+                    < Achievement student={student} />
+                    < Comments
+                        id={id}
+                        info={info}
+                        setInfo={setInfo}
+                        student={student} />
                 </div>
             ) : (null)}
 

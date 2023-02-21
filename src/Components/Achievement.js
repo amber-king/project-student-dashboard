@@ -4,6 +4,7 @@
 import Green from "./Green.js" // ? if its >= 100
 import Yellow from "./Yellow.js" // ? if its >= 50
 import Red from "./Red.js" // ? if < than 50
+
 export default function Achievement({ student }) {
 
     // * variable set to change the number value info according to different student beiing changed 

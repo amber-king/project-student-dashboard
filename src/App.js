@@ -24,9 +24,6 @@ function App() {
         <Cohorts info={info} setCohort={setCohort} />
         <StudentsData info={info} setInfo={setInfo} cohort={cohort} />
       </main>
-      {/* <Footer/> */}
-      <h3>Footer Here</h3>
-
     </div>
 
   );

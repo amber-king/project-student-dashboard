@@ -11,6 +11,7 @@ export default function Students({ info, cohort, setInfo }) {
     }
 
     // * returns the the student email,full name,dob and profile pic through the map method
+    // * also includes if the student is on track to graduate
     // * w/toggle button to change b/t show more & hide less ->StudentDataII
     // .replace(), modifies the string to the coders desire without changing the orignal data
     return (
@@ -27,14 +28,27 @@ export default function Students({ info, cohort, setInfo }) {
                             <img src={student.profilePhoto} alt="student-pic "></img>
                             <div className="infoSpot">
                                 <p><strong>{student.names.preferredName} {student.names.middleName.slice(0, 1)}. {student.names.surname}</strong></p>
-                                <p>{student.username}</p>
-                                <p>Birthday: {student.dob}</p>
+                                <p>⌨️{student.username}</p>
+                                <p>🥮Birthday: {student.dob}</p>
 
 
                             </div>
-
+                            <div>
+                                {(student.codewars.current.total > 600) &&
+                                    (student.certifications.resume) &&
+                                    (student.certifications.resume) &&
+                                    (student.certifications.linkedin) &&
+                                    (student.certifications.github) &&
+                                    (student.certifications.mockInterview) ?
+                                    (<p className="graduateinfo">On Track to Graduate 😁</p>) :
+                                    (null)}
+                            </div>
                         </div>
-                        <StudentDataII student={student} id={student.id} info={info} setInfo={setInfo} />
+                        <StudentDataII
+                            student={student}
+                            id={student.id}
+                            info={info}
+                            setInfo={setInfo} />
                         {/*  The <hr> HTML element represents a thematic break between paragraph-level elements*/}
 
                     </li>
