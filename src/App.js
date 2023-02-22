@@ -22,7 +22,11 @@ function App() {
       <Header />
       <main>
         <Cohorts info={info} setCohort={setCohort} />
-        <StudentsData info={info} setInfo={setInfo} cohort={cohort} />
+        <StudentsData
+          info={info}
+          setInfo={setInfo}
+          cohort={cohort} />
+         
       </main>
     </div>
 

@@ -17,7 +17,7 @@ export default function Students({ info, cohort, setInfo }) {
     return (
         <div className="students">
             <div>
-                <h3>{cohort.replace(/\d+/g, '') + " " + cohort.replace(/\D/g, '')}</h3>
+                <h2>{cohort.replace(/\d+/g, '') + " " + cohort.replace(/\D/g, '')}</h2>
                 <h4>Total Students ➡️ <span className="green2">{newStudentArr.length} </span></h4>
             </div>
 

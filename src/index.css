@@ -4,6 +4,8 @@ header {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
+    font-family: cursive;
+
 }
 
 header h1 {
@@ -13,16 +15,19 @@ header h1 {
 main {
     display: grid;
     grid-template-columns: 30% 70%;
+    font-family: cursive;
 }
 
-.cohorts {
+.cohorts{
     background-color: khaki;
     text-align: center;
 
+
 }
 
-.cohorts li {
+.cohorts li:hover {
     list-style-type: none;
+   
 }
 
 .cohorts ul {
@@ -31,6 +36,7 @@ main {
 
 .students {
     background-color: lightgray;
+
 }
 
 .students img {
@@ -73,15 +79,15 @@ main {
 }
 
 .achievement .green {
-    color: green;
+    color: mediumseagreen;
 }
 
 .achievement .yellow {
-    color: rgb(195, 195, 32);
+    color:yellow;
 }
 
 .achievement .red {
-    color: red;
+    color:crimson;
 }
 
 form {
@@ -101,9 +107,9 @@ form .dblock {
 }
 
 .toggleButton button:hover {
-    color: burlywood;
+    color:slateblue;
     background-color: lightgrey;
-    border: 0.3px;
+    border: 0.3px solid;
     text-decoration: underline;
 }
 
@@ -113,6 +119,3 @@ form .dblock {
 
 }
 
-Footer {
-    color: dimgrey;
-}
