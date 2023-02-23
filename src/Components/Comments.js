@@ -24,9 +24,9 @@ export default function Comments({ id, info, setInfo, student }) {
             return students
         })
         // * sets new comment info to info and comment setters
-        setInfo(commentChange)
-        setCommentHere("")
-        setCommenterName("")
+        setInfo(commentChange) // TODO: sets comment change to info setter
+        setCommentHere("") // TODO: sets new comment in ""
+        setCommenterName("") // TODO: sets new commenter name in ""
 
         // ? State attempts done ---v
         // const [addNote, setAddNote] = useState({ // ? state for add comment section

@@ -16,6 +16,7 @@ main {
     display: grid;
     grid-template-columns: 30% 70%;
     font-family: cursive;
+  
 }
 
 .cohorts{
