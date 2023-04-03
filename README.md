@@ -1,4 +1,4 @@
-# React Mid-Module Project
+# ⚽️ React Student Dashboard Project_9.3
 
 ![Landing page.](./instruction-assets/landing.png)
 
